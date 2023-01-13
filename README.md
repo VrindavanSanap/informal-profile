@@ -1,2 +1,2 @@
 # vrindavansanap.github.io
-## [Live💫 vrindavansanap.github.io][https://vrindavansanap.github.io/]
+## (Live💫)[https://vrindavansanap.github.io/]
