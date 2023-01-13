@@ -7,6 +7,11 @@
         body {
             font-family: monospace
         }
+
+        a#link {
+            color: blue;
+            text-decoration: underline;
+        }
     </style>
     <title>Vrdvn</title>
 </head>
@@ -14,13 +19,27 @@
 <body>
     Vrdvn's home on the internet...ain't my web design skills sick?
     <br /><br />
-    i also have a poorly written <a href="https://medium.com/@vrindavansanap">blog</a>
+    i also have a poorly written <a  target="_blank"  href="https://medium.com/@vrindavansanap">blog</a>
     <br /><br />
     <big><big><big><big>
-                    <big><big>&lt;big&gt;<a href="https://github.com/vrindavansanap">FOLLOW ME ON
+                    <big><big>&lt;big&gt;<a  target="_blank"  href="https://github.com/vrindavansanap">FOLLOW ME ON
                                 GITHUB</a>&lt;/big&gt;</big></big>
                 </big></big></big></big>
     <br /><br />
+
+    <a href="#" id="link">Design Disclaimer</a>
+    <div id="hidden-text" style="display: none;">
+    <p  >“good artists borrow, great artists steal."  -Piccaso</p>
+    <p>Html stolen from <a target="_blank" href="https://www.geohot.com">geohot.com</a> <p>
+    </div>
+    <script>
+        let link = document.getElementById("link");
+        let hiddenText = document.getElementById("hidden-text");
+
+        link.addEventListener("click", function () {
+            hiddenText.style.display = (hiddenText.style.display === "none") ? "block" : "none";
+        });
+    </script>
 </body>
 
 </html>
